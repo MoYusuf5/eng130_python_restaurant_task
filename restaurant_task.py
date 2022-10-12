@@ -19,11 +19,23 @@ view_menu = str(input())
 
 if view_menu == "yes":
     print(menu)
-    view_menu = str(input("What would you like to order?"))
+    order_list = []
 
+    order_1 = input("Please make your first order")
+    order_list.append(order_1)
 
+    order_2 = input("Please make your second order")
+    order_list.append(order_2)
+
+    order_3 = input("Please make your third order")
+    order_list.append(order_3)
+
+    for a in order_list:
+        print(a)
 elif view_menu == "no":
     print("Thanks, Enjoy Your Day!")
+
+
 
 
 
